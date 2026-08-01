@@ -11,7 +11,7 @@ interface AvatarProps {
  * Profile image placeholder. Renders a real image when `src` is provided,
  * otherwise a branded initials monogram — swap in a photo by setting `src`.
  */
-export function Avatar({ src, alt = 'Profile photo', initials = 'SA', className }: AvatarProps) {
+export function Avatar({ src, alt = 'Profile photo', initials = 'KR', className }: AvatarProps) {
   if (src) {
     return (
       <img

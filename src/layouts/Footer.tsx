@@ -40,7 +40,7 @@ export function Footer() {
               Connect
             </h3>
             <ul className="mt-4 space-y-2.5">
-              {socials.slice(0, 3).map((social) => {
+              {socials.map((social) => {
                 const Icon = social.icon
                 return (
                   <li key={social.name}>

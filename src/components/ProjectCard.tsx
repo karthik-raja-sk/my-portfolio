@@ -35,15 +35,17 @@ export function ProjectCard({ project }: ProjectCardProps) {
           >
             <GithubIcon className="size-4.5" />
           </a>
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${project.title} live demo`}
-            className="flex size-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-lg backdrop-blur transition-transform duration-300 hover:scale-110 hover:text-brand-600"
-          >
-            <ArrowUpRight className="size-4.5" aria-hidden="true" />
-          </a>
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${project.title} live demo`}
+              className="flex size-9 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-lg backdrop-blur transition-transform duration-300 hover:scale-110 hover:text-brand-600"
+            >
+              <ArrowUpRight className="size-4.5" aria-hidden="true" />
+            </a>
+          )}
         </div>
       </div>
 
@@ -72,16 +74,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
           >
             Code
           </Button>
-          <Button
-            size="sm"
-            icon={ArrowUpRight}
-            iconPosition="right"
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </Button>
+          {project.live && (
+            <Button
+              size="sm"
+              icon={ArrowUpRight}
+              iconPosition="right"
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </Button>
+          )}
         </div>
       </div>
     </motion.article>

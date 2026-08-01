@@ -116,7 +116,7 @@ export function Hero() {
                 <Avatar
                   src={avatarSrc}
                   alt={`${profile.name} — profile photo`}
-                  initials="SA"
+                  initials="KR"
                 />
               </div>
             </div>
@@ -127,10 +127,10 @@ export function Hero() {
               </span>
               <div className="text-left">
                 <p className="text-xs font-semibold text-slate-800 dark:text-slate-100">
-                  React &amp; TypeScript
+                  Java &amp; Full Stack
                 </p>
                 <p className="text-[0.7rem] text-slate-500 dark:text-slate-400">
-                  Frontend specialist
+                  Spring Boot · FastAPI
                 </p>
               </div>
             </div>
@@ -141,10 +141,10 @@ export function Hero() {
               </span>
               <div className="text-left">
                 <p className="text-xs font-semibold text-slate-800 dark:text-slate-100">
-                  AI / ML
+                  AI &amp; RAG
                 </p>
                 <p className="text-[0.7rem] text-slate-500 dark:text-slate-400">
-                  Exploring intelligence
+                  LangChain · Hugging Face
                 </p>
               </div>
             </div>

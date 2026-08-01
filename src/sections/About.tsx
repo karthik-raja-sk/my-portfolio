@@ -12,9 +12,9 @@ const quickFacts = [
 ]
 
 const stats = [
-  { label: 'Years Learning', value: profile.yearsOfLearning },
   { label: 'Projects Built', value: profile.projectsBuilt },
-  { label: 'Open Source Contributions', value: profile.happyContributions },
+  { label: 'LeetCode Problems', value: profile.leetCodeSolved },
+  { label: 'Years Learning', value: profile.yearsOfLearning },
 ]
 
 export function About() {

@@ -33,7 +33,7 @@ export interface Project {
   longDescription: string
   technologies: string[]
   github: string
-  live: string
+  live?: string
   image?: string
   gradient: string
   icon: LucideIcon

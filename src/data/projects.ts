@@ -1,93 +1,73 @@
-import {
-  ShoppingCart,
-  MessageSquare,
-  BrainCircuit,
-  Newspaper,
-  BarChart3,
-  CloudSun,
-} from 'lucide-react'
+// TODO: Replace the `github` and `live` URLs below with the real repository and demo links for each project.
+import { FileSearch, Music, BookOpen, ShieldCheck, Lock } from 'lucide-react'
 import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
-    id: 'shoply',
-    title: 'Shoply — E-Commerce Platform',
+    id: 'ai-resume-matcher',
+    title: 'AI Resume Job Matcher',
     description:
-      'A full-featured storefront with cart, checkout, payments, and admin dashboard.',
+      'AI-powered tool that matches resumes to job descriptions and suggests improvements.',
     longDescription:
-      'Built a production-style e-commerce platform with product search, filtering, wishlist, Stripe checkout, order tracking, and a role-based admin panel. Optimized with code-splitting and image lazy-loading.',
-    technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
-    github: 'https://github.com/samir-amin/shoply',
-    live: 'https://shoply-demo.vercel.app',
+      'Uses retrieval-augmented generation to parse resumes, extract skills, and score fit against job descriptions. Produces weighted match scores with actionable feedback to improve resume–job alignment.',
+    technologies: ['Python', 'FastAPI', 'LangChain', 'Hugging Face', 'RAG'],
+    github: 'https://github.com/karthik-raja', // TODO
+    live: 'https://github.com/karthik-raja', // TODO
     gradient: 'from-indigo-500 via-violet-500 to-fuchsia-500',
-    icon: ShoppingCart,
+    icon: FileSearch,
     featured: true,
   },
   {
-    id: 'devchat',
-    title: 'DevChat — Realtime Messenger',
-    description:
-      'Realtime chat app with rooms, typing indicators, and read receipts.',
+    id: 'mood-music-ai',
+    title: 'Mood Music AI',
+    description: 'Playlist app that curates music based on your detected mood.',
     longDescription:
-      'Developed a realtime chat application with WebSockets, persistent history, emoji picker, and typing indicators. Includes file sharing and end-to-end read receipts.',
-    technologies: ['React', 'Socket.IO', 'Node.js', 'Redis', 'MongoDB'],
-    github: 'https://github.com/samir-amin/devchat',
-    live: 'https://devchat-demo.vercel.app',
-    gradient: 'from-sky-500 via-cyan-500 to-teal-500',
-    icon: MessageSquare,
+      'Combines a mood-detection model with a music recommendation engine to generate personalized playlists in real time, adapting to user preferences.',
+    technologies: ['Python', 'FastAPI', 'React', 'scikit-learn'],
+    github: 'https://github.com/karthik-raja', // TODO
+    live: 'https://github.com/karthik-raja', // TODO
+    gradient: 'from-rose-500 via-pink-500 to-fuchsia-500',
+    icon: Music,
     featured: true,
   },
   {
-    id: 'ai-mock-interviewer',
-    title: 'AI Mock Interviewer',
+    id: 'adaptive-rag-qa',
+    title: 'Adaptive RAG Question Answering System',
     description:
-      'Interview practice app with AI-generated questions and feedback.',
+      'A retrieval-augmented QA system that adapts its retrieval strategy to query complexity.',
     longDescription:
-      'Created an interview preparation tool that generates role-specific questions and provides AI-powered feedback on answers using LLM APIs. Tracks progress over time.',
-    technologies: ['Next.js', 'TypeScript', 'OpenAI API', 'Tailwind CSS', 'Prisma'],
-    github: 'https://github.com/samir-amin/ai-mock-interviewer',
-    live: 'https://ai-interview-demo.vercel.app',
+      'Implements adaptive retrieval routing — vector search, web search, and follow-ups — using LangChain and Hugging Face embeddings to return accurate, grounded answers.',
+    technologies: ['LangChain', 'Hugging Face', 'RAG', 'Python', 'FastAPI'],
+    github: 'https://github.com/karthik-raja', // TODO
+    live: 'https://github.com/karthik-raja', // TODO
     gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
-    icon: BrainCircuit,
+    icon: BookOpen,
     featured: true,
   },
   {
-    id: 'campus-news',
-    title: 'Campus News Hub',
+    id: 'cloudsentinel-x',
+    title: 'CloudSentinel X',
     description:
-      'News aggregator for campus events with categories and search.',
+      'Cloud security monitoring dashboard with anomaly detection and alerts.',
     longDescription:
-      'Built a campus-focused news platform with an editorial dashboard, category tagging, full-text search, and RSS-like subscriptions. Server-rendered for SEO.',
-    technologies: ['Next.js', 'PostgreSQL', 'Tailwind CSS', 'tRPC'],
-    github: 'https://github.com/samir-amin/campus-news',
-    live: 'https://campusnews-demo.vercel.app',
-    gradient: 'from-rose-500 via-pink-500 to-orange-400',
-    icon: Newspaper,
+      'Aggregates cloud logs, applies anomaly-detection rules, and surfaces actionable alerts through an intuitive monitoring dashboard.',
+    technologies: ['Python', 'FastAPI', 'Docker', 'React'],
+    github: 'https://github.com/karthik-raja', // TODO
+    live: 'https://github.com/karthik-raja', // TODO
+    gradient: 'from-sky-500 via-blue-500 to-indigo-500',
+    icon: ShieldCheck,
   },
   {
-    id: 'stock-dashboard',
-    title: 'Stock Analytics Dashboard',
+    id: 'dpdp-pii-redaction',
+    title: 'DPDP-Compliant PII Discovery & Redaction',
     description:
-      'Real-time market dashboard with charts, watchlists, and alerts.',
+      'Privacy tool that discovers and redacts personally identifiable information for DPDP compliance.',
     longDescription:
-      'A financial dashboard consuming market APIs with candlestick charts, technical indicators, watchlists, and custom price alerts pushed over WebSockets.',
-    technologies: ['React', 'TypeScript', 'Chart.js', 'Express', 'WebSocket'],
-    github: 'https://github.com/samir-amin/stock-dashboard',
-    live: 'https://stocks-demo.vercel.app',
-    gradient: 'from-amber-500 via-yellow-500 to-lime-500',
-    icon: BarChart3,
-  },
-  {
-    id: 'weather-app',
-    title: 'WeatherWise',
-    description:
-      'Elegant weather app with 7-day forecasts and geolocation.',
-    longDescription:
-      'A polished weather application with geolocation, 7-day forecasts, animated conditions, and unit toggling. Features offline-friendly caching and PWA support.',
-    technologies: ['React', 'Tailwind CSS', 'OpenWeather API', 'PWA'],
-    github: 'https://github.com/samir-amin/weatherwise',
-    live: 'https://weatherwise-demo.vercel.app',
-    gradient: 'from-blue-500 via-indigo-500 to-violet-500',
-    icon: CloudSun,
+      'Uses Hugging Face NER models to detect PII such as names, phone numbers, and emails, then applies auditable redaction aligned with India\u2019s DPDP Act.',
+    technologies: ['Python', 'Hugging Face', 'NER', 'FastAPI', 'Docker'],
+    github: 'https://github.com/karthik-raja', // TODO
+    live: 'https://github.com/karthik-raja', // TODO
+    gradient: 'from-amber-500 via-orange-500 to-rose-500',
+    icon: Lock,
   },
 ]

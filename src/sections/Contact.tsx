@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { AlertCircle, CheckCircle2, Loader2, Mail, MapPin, Phone, Send } from 'lucide-react'
+import { AlertCircle, Briefcase, CheckCircle2, Loader2, Mail, MapPin, Send } from 'lucide-react'
 import { profile } from '@/data/profile'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Button } from '@/components/ui/Button'
@@ -59,8 +59,8 @@ function validate(form: ContactForm): FormErrors {
 
 const contactInfo = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-  { icon: Phone, label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
   { icon: MapPin, label: 'Location', value: profile.location, href: undefined },
+  { icon: Briefcase, label: 'Availability', value: profile.availability, href: undefined },
 ]
 
 interface FieldProps {

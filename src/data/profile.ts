@@ -1,41 +1,42 @@
-import { Mail, Phone } from 'lucide-react'
-import { GithubIcon, LinkedinIcon, XIcon } from '@/components/icons/BrandIcons'
+import { Mail } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, LeetCodeIcon } from '@/components/icons/BrandIcons'
 import type { SocialLink } from '@/types'
 
 export const profile = {
-  name: 'Samir Amin',
-  firstName: 'Samir',
-  role: 'B.Tech Information Technology',
+  name: 'Karthik Raja',
+  firstName: 'Karthik',
+  role: 'B.Tech Information Technology Student',
   typewriterRoles: [
-    'Full-Stack Developer',
-    'React & TypeScript Enthusiast',
-    'AI/ML Learner',
+    'Java Developer',
+    'Full Stack Developer',
+    'AI & RAG Enthusiast',
     'Problem Solver',
-    'UI/UX-Focused Engineer',
   ],
-  tagline:
-    'Building fast, accessible, and delightful web experiences with modern JavaScript.',
+  tagline: 'Java Developer | Full Stack Developer | AI & RAG Enthusiast',
   summary:
-    'A passionate B.Tech Information Technology student with hands-on experience building production-grade web applications. I love turning complex problems into clean, performant, and user-friendly software — from pixel-perfect UIs to robust backend systems.',
+    'Passionate IT student interested in Software Development, Java, Full Stack Development, Artificial Intelligence, Retrieval-Augmented Generation (RAG), and problem solving.',
   careerObjective:
-    'To secure a challenging role where I can apply my full-stack development skills, contribute to impactful products, and keep growing as an engineer in a collaborative, innovative team.',
-  location: 'Kolkata, India',
-  email: 'samir.amin@example.com',
-  phone: '+91 98765 43210',
-  resumeUrl: '/resume/Samir_Amin_Resume.pdf',
-  githubUrl: 'https://github.com/samir-amin',
-  availability: 'Open to internships & full-time roles',
+    'Looking for Software Development Engineer opportunities where I can build robust, scalable software and grow into a well-rounded engineer.',
+  location: 'India',
+  email: 'karthik.raja@example.com',
+  resumeUrl: '/resume/Karthik_Raja_Resume.pdf',
+  githubUrl: 'https://github.com/karthik-raja',
+  availability: 'Open to SDE roles & internships',
   yearsOfLearning: 3,
-  projectsBuilt: 15,
-  happyContributions: 20,
+  projectsBuilt: 5,
+  leetCodeSolved: 100,
 }
 
+// TODO: Replace the placeholder URLs below with your real social links.
 export const socials: SocialLink[] = [
-  { name: 'GitHub', url: 'https://github.com/samir-amin', icon: GithubIcon, label: 'Visit my GitHub profile' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/samir-amin', icon: LinkedinIcon, label: 'Connect on LinkedIn' },
-  { name: 'Email', url: `mailto:${profile.email}`, icon: Mail, label: 'Send me an email' },
-  { name: 'X (Twitter)', url: 'https://x.com/samir_amin', icon: XIcon, label: 'Follow me on X' },
-  { name: 'Phone', url: `tel:${profile.phone.replace(/\s/g, '')}`, icon: Phone, label: 'Call me' },
+  // TODO: Update this GitHub URL.
+  { name: 'GitHub', url: 'https://github.com/karthik-raja', icon: GithubIcon, label: 'Visit my GitHub profile' },
+  // TODO: Update this LinkedIn URL.
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/karthik-raja', icon: LinkedinIcon, label: 'Connect on LinkedIn' },
+  // TODO: Update this LeetCode URL.
+  { name: 'LeetCode', url: 'https://leetcode.com/u/karthik-raja', icon: LeetCodeIcon, label: 'View my LeetCode profile' },
+  // TODO: Update this email address.
+  { name: 'Email', url: 'mailto:karthik.raja@example.com', icon: Mail, label: 'Send me an email' },
 ]
 
 export const navItems: { label: string; href: string }[] = [

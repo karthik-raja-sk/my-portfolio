@@ -17,7 +17,7 @@ A modern, high-performance single-page portfolio built with **React 19**, **Vite
 
 ## 🖼️ Preview
 
-![KR monogram avatar](C:\Users\samin\OneDrive\Desktop\My_portfolio\src\assets\Screenshot 2026-08-02 200233.png)
+![KR monogram avatar](./src/assets/Screenshot 2026-08-02 200233.png)
 
 
 

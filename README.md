@@ -1,8 +1,13 @@
 <div align="center">
 
-# 👨‍💻 Karthik Raja S — Developer Portfolio
+# 🚀 My Portfolio
 
-A modern, high-performance single-page portfolio built with **React 19**, **Vite 8**, **TypeScript**, and **Tailwind CSS v4**. Features glassmorphism UI, smooth Framer Motion animations, dark/light mode, SEO metadata, and a fully responsive layout.
+**Java Developer | Full Stack Developer | AI & RAG Enthusiast**
+
+A modern, responsive single-page portfolio for **Karthik Raja S** — a B.Tech Information Technology student from Tamil Nadu, India — built with React 19, Vite 8, TypeScript, and Tailwind CSS v4. It showcases his skills, projects, achievements, and experience with a premium glassmorphism UI, smooth animations, and dark/light mode.
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-6A5ACD?style=for-the-badge&logo=vercel&logoColor=white)](https://my-portfolio-eta-one-42.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karthik-raja-sk)
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -18,27 +23,32 @@ A modern, high-performance single-page portfolio built with **React 19**, **Vite
 ## 🖼️ Preview
 
 <p align="center">
-  <img src="./screenshots/portfolio-home.png" alt="Portfolio Preview" width="100%">
+  <img src="screenshots/portfolio-home.png" alt="My Portfolio — Home section screenshot" width="80%" />
 </p>
 
-A personal portfolio for **Karthik Raja S** — a B.Tech Information Technology student from Tamil Nadu, India, passionate about Java full-stack development, AI-powered systems, and cloud-based cybersecurity. This site presents his profile, skills, projects, achievements, education, and certifications in a clean, animated, recruiter-friendly layout.
+A personal portfolio presenting a clean profile, technical skills, featured projects, achievements, education, certifications, and a contact section — all in a fast, accessible, and recruiter-friendly layout.
+
+---
+
+## 📖 About
+
+This project is a **single-page developer portfolio** built entirely with React and TypeScript. All content is **data-driven** — profile, projects, skills, achievements, education, and certifications live in separate modules under `src/data/`, so the site is easy to maintain and extend without touching UI components.
+
+It is designed to present Karthik Raja S as he grows toward a career as a Software Engineer, combining Java full-stack development, AI-powered systems, and cloud security experience.
 
 ---
 
 ## ✨ Features
 
-| Feature | Details |
-| --- | --- |
-| 📱 **Responsive Design** | Mobile-first layout with Tailwind CSS breakpoints; adapts from small phones to widescreen |
-| 🌙 **Dark / Light Mode** | Class-based theme via `localStorage` (`portfolio-theme`) with a pre-paint script to avoid flash-of-wrong-theme |
-| 🎬 **Smooth Animations** | Framer Motion — staggered reveals, scroll-triggered entrances, typewriter effect, animated skill bars |
-| 💎 **Glassmorphism UI** | Reusable `glass` / `glass-strong` components with backdrop blur and subtle borders |
-| 🔍 **SEO Optimized** | Meta tags, Open Graph, Twitter Cards, JSON-LD structured data, and canonical URL |
-| ♿ **Accessibility** | Skip-to-content link, focus-visible rings, ARIA labels/current states, Escape-to-close menu, `prefers-reduced-motion` support |
-| 📄 **Resume Download** | Download button in navbar/hero backed by a real PDF in `public/resume/` |
-| 🧩 **Projects** | 5 featured projects with code + live-demo links and skill badges |
-| 📬 **Contact Form** | Client-side validated form with animated success state (ready to wire to a backend) |
-| ⚡ **Mobile Friendly** | Hamburger menu, touch-friendly targets, no horizontal overflow on any screen size |
+- 💎 **Glassmorphism UI** — frosted-glass cards, subtle borders, and depth
+- 🌙 **Dark / Light Mode** — instant theme switching with no flash of the wrong theme
+- 🎬 **Smooth Animations** — Framer Motion staggered reveals, scroll-triggered entrances, and a typewriter effect
+- 📱 **Fully Responsive** — mobile-first layout across all screen sizes
+- 🔍 **SEO Optimized** — meta tags, Open Graph, Twitter Cards, and JSON-LD structured data
+- ♿ **Accessible** — skip-to-content link, ARIA labels, focus-visible rings, and reduced-motion support
+- 📄 **Resume Download** — one-click PDF download from the navbar and hero
+- 📬 **Contact Form** — client-side validated form with an animated success state
+- ⚡ **Code Splitting** — below-the-fold sections load on demand via `React.lazy` + `Suspense`
 
 ---
 
@@ -50,16 +60,17 @@ A personal portfolio for **Karthik Raja S** — a B.Tech Information Technology 
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-12-0055FF?style=flat-square&logo=framer&logoColor=white)
 ![Lucide React](https://img.shields.io/badge/Lucide%20React-1.x-6C9CF5?style=flat-square&logo=lucide&logoColor=white)
+![oxlint](https://img.shields.io/badge/oxlint-1.x-4B32C3?style=flat-square)
 
-| Area | Tool |
+| Area | Technology |
 | --- | --- |
 | **UI Library** | [React](https://react.dev/) 19 with Strict Mode |
 | **Build Tool** | [Vite](https://vite.dev/) 8 + `@vitejs/plugin-react` |
 | **Language** | [TypeScript](https://www.typescriptlang.org/) 6 |
-| **Styling** | [Tailwind CSS](https://tailwindcss.com/) 4 (CSS-first config via `@tailwindcss/vite`) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) 4 (CSS-first config) |
 | **Animation** | [Framer Motion](https://www.framer.com/motion/) 12 |
 | **Icons** | [Lucide React](https://lucide.dev/) 1.x + custom brand icons |
-| **Linting** | [oxlint](https://oxc.rs/docs/guide/usage/linter.html) |
+| **Linting** | [oxlint](https://oxc.rs/docs/guide/usage/linter.html) 1.x |
 
 ---
 
@@ -67,92 +78,90 @@ A personal portfolio for **Karthik Raja S** — a B.Tech Information Technology 
 
 ```
 my-portfolio/
-├── public/                          # Static assets served at root
-│   ├── favicon.svg                  # Site favicon
-│   └── resume/                      # Resume PDF(s)
+├── public/                       # Static assets (served at root)
+│   ├── favicon.svg               # Site favicon
+│   └── resume/                   # Resume PDF
 │       └── Karthik_Raja_S_Resume_v3-1.pdf
+├── screenshots/                  # README preview assets
+│   └── portfolio-home.png
 ├── src/
 │   ├── assets/
-│   │   └── avatar.svg               # Profile image (SVG monogram)
+│   │   └── avatar.svg            # Profile image
 │   ├── components/
 │   │   ├── icons/
-│   │   │   └── BrandIcons.tsx       # GitHub / LinkedIn / LeetCode SVGs
-│   │   ├── ui/
-│   │   │   ├── Avatar.tsx           # Image/initials avatar
-│   │   │   ├── Badge.tsx            # Pill badge
-│   │   │   ├── Button.tsx           # Polymorphic button/anchor
-│   │   │   ├── Reveal.tsx           # Scroll-in wrapper
-│   │   │   ├── SectionHeading.tsx   # Eyebrow + title + description
-│   │   │   ├── SocialLinks.tsx      # Social icon row
-│   │   │   └── Typewriter.tsx       # Rotating-role typewriter
-│   │   ├── Brand.tsx                # Logo + name lockup
-│   │   ├── ProjectCard.tsx          # Project card with hover actions
-│   │   └── ThemeToggle.tsx          # Light/dark switcher
-│   ├── data/                        # ✏️ All editable content lives here
-│   │   ├── profile.ts               # Name, tagline, contact, socials, stats
-│   │   ├── projects.ts              # Project list + repo links
-│   │   ├── achievements.ts          # Awards & recognition
-│   │   ├── skills.ts                # Skill groups & levels
-│   │   └── education.ts             # Education + certifications
+│   │   │   └── BrandIcons.tsx    # GitHub / LinkedIn / LeetCode SVGs
+│   │   ├── ui/                   # Reusable primitives
+│   │   │   ├── Avatar.tsx        # Image / initials avatar
+│   │   │   ├── Badge.tsx         # Pill badge
+│   │   │   ├── Button.tsx        # Polymorphic button / link
+│   │   │   ├── Reveal.tsx        # Scroll-in wrapper
+│   │   │   ├── SectionHeading.tsx
+│   │   │   ├── SocialLinks.tsx
+│   │   │   └── Typewriter.tsx    # Rotating-role typewriter
+│   │   ├── Brand.tsx             # Logo + name lockup
+│   │   ├── ProjectCard.tsx       # Project card
+│   │   └── ThemeToggle.tsx       # Light / dark switcher
+│   ├── data/                     # ✏️ All editable content
+│   │   ├── profile.ts            # Name, contact, socials, stats
+│   │   ├── projects.ts           # Project list + links
+│   │   ├── achievements.ts       # Awards & recognition
+│   │   ├── skills.ts             # Skill groups & levels
+│   │   └── education.ts          # Education + certifications
 │   ├── hooks/
-│   │   ├── useActiveSection.ts      # Scroll-spy for nav highlighting
-│   │   ├── useTheme.ts              # Dark/light theme state
-│   │   └── useTypewriter.ts         # Typewriter animation loop
+│   │   ├── useActiveSection.ts   # Scroll-spy
+│   │   ├── useTheme.ts           # Theme state
+│   │   └── useTypewriter.ts      # Typewriter loop
 │   ├── layouts/
-│   │   ├── RootLayout.tsx           # App shell + lazy-loaded sections
-│   │   ├── Navbar.tsx               # Fixed glass navigation
-│   │   └── Footer.tsx               # Links, connect, back-to-top
-│   ├── sections/                    # One component per page section
-│   │   ├── Hero.tsx                 # Intro, typewriter, avatar, CTAs
-│   │   ├── About.tsx                # Summary, quick facts, stats
-│   │   ├── Skills.tsx               # Animated skill bars
-│   │   ├── Projects.tsx             # Project grid
-│   │   ├── Achievements.tsx         # Milestones & recognition
-│   │   ├── Education.tsx            # Academic timeline
-│   │   ├── Certifications.tsx       # Credential cards
-│   │   └── Contact.tsx              # Contact info + form
+│   │   ├── RootLayout.tsx        # App shell (lazy sections)
+│   │   ├── Navbar.tsx            # Fixed glass navigation
+│   │   └── Footer.tsx
+│   ├── sections/                 # One component per section
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Achievements.tsx
+│   │   ├── Education.tsx
+│   │   ├── Certifications.tsx
+│   │   └── Contact.tsx
 │   ├── styles/
-│   │   └── globals.css              # Tailwind v4 theme + base styles
+│   │   └── globals.css           # Tailwind v4 theme + base styles
 │   ├── types/
-│   │   └── index.ts                 # Shared TypeScript interfaces
+│   │   └── index.ts              # Shared interfaces
 │   ├── utils/
-│   │   ├── cn.ts                    # Class name helper
-│   │   ├── motion.ts                # Shared Framer Motion variants
-│   │   └── scroll.ts                # Smooth scroll helper
-│   ├── App.tsx                      # Root component
-│   └── main.tsx                     # Entry point
-├── index.html                       # SEO meta, fonts, theme pre-paint script
+│   │   ├── cn.ts                 # Class name helper
+│   │   ├── motion.ts             # Framer Motion variants
+│   │   └── scroll.ts             # Smooth scroll helper
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html                    # SEO meta + pre-paint theme script
 ├── package.json
-├── vite.config.ts                   # Vite + Tailwind + `@` alias config
+├── vite.config.ts
 ├── tsconfig.json
 ├── tsconfig.app.json
 ├── tsconfig.node.json
-└── .oxlintrc.json                   # Lint rules
+└── .oxlintrc.json
 ```
 
 ---
 
 ## 🚀 Installation
 
-Clone the repository and start developing:
-
 ```bash
-# Clone the repo
-git clone https://github.com/karthik-raja-sk/portfolio.git
-cd portfolio
+# Clone the repository
+git clone https://github.com/karthik-raja-sk/my-portfolio.git
+cd my-portfolio
 
 # Install dependencies
 npm install
 
-# Start the dev server (http://localhost:5173)
+# Start the development server (http://localhost:5173)
 npm run dev
 ```
 
 ---
 
 ## 📦 Build
-
-Create an optimized production build and preview it locally:
 
 ```bash
 # Type-check + build for production
@@ -167,146 +176,69 @@ npm run lint
 
 ---
 
-## 🧭 Project Sections
+## ☁️ Deployment
 
-| # | Section | Highlights |
-| --- | --- | --- |
-| 1 | **Hero** | Animated intro, typewriter roles, avatar card, CTAs, social links |
-| 2 | **About** | Professional summary, quick facts, career objective, stats |
-| 3 | **Skills** | 6 groups with animated proficiency bars |
-| 4 | **Projects** | 5 featured projects with code/live links |
-| 5 | **Achievements** | Awards, internships, and problem-solving milestones |
-| 6 | **Education** | Degree, HSC, and SSLC timeline with scores |
-| 7 | **Certifications** | NPTEL, Infosys, and NASSCOM credentials |
-| 8 | **Contact** | Contact cards, email/phone, social links, contact form |
+This portfolio is deployed on **[Vercel](https://vercel.com)**.
+
+- **Live URL:** https://my-portfolio-eta-one-42.vercel.app
+- Vercel auto-detects Vite — no configuration required.
+- Re-deploys automatically on every push to the main branch.
+
+---
+
+## 🧭 Portfolio Sections
+
+| Section | Purpose |
+| --- | --- |
+| 🏠 **Home** | Animated intro, typewriter roles, avatar card, CTAs |
+| 👤 **About** | Professional summary, quick facts, career objective, stats |
+| 🛠️ **Skills** | Six skill groups with animated proficiency bars |
+| 📦 **Projects** | Featured projects with code and demo links |
+| 🏆 **Achievements** | Awards, internships, and milestones |
+| 🎓 **Education** | Academic timeline with scores |
+| 📜 **Certifications** | NPTEL, Infosys, and NASSCOM credentials |
+| 📬 **Contact** | Contact cards, social links, and a contact form |
 
 ---
 
 ## 🎨 Customization
 
-All content is data-driven — you can update the entire site without touching UI components.
+Everything is data-driven — update the content without touching the UI.
 
-| File | What to change |
+| File | What to update |
 | --- | --- |
-| `src/data/profile.ts` | Name, title, tagline, summary, objective, location, phone, email, resume URL, social links, stats |
-| `src/data/projects.ts` | Project list — titles, descriptions, tech tags, GitHub links, gradients, icons |
-| `src/data/achievements.ts` | Award/recognition cards (title, org, year, description) |
-| `src/data/education.ts` | Academic history **and** certification entries |
+| `src/data/profile.ts` | Name, title, tagline, summary, location, phone, email, social links, resume URL, stats |
 | `src/data/skills.ts` | Skill groups, names, levels, and colors |
-| `src/sections/Contact.tsx` | Contact section layout; contact details (email/phone) live in `profile.ts` |
-| `public/resume/` | Drop in your resume PDF; update `resumeUrl` in `profile.ts` if you rename it |
-| `src/assets/avatar.svg` | Replace with your profile photo (keeps the `Avatar` component's `src` prop) |
-
-> 💡 There is no separate `contact.ts` — contact info is edited in `src/data/profile.ts`, and the section markup lives in `src/sections/Contact.tsx`.
+| `src/data/projects.ts` | Project titles, descriptions, tech tags, and GitHub links |
+| `src/data/education.ts` | Academic history **and** certifications |
+| `src/data/achievements.ts` | Award / recognition cards |
+| `src/sections/Contact.tsx` | Contact section layout (details come from `profile.ts`) |
+| `public/resume/` | Replace the PDF; update `resumeUrl` in `profile.ts` if renamed |
+| `src/assets/avatar.svg` | Replace with a profile photo |
 
 ---
 
 ## ⚡ Performance
 
-- 📱 **Responsive** — fluid grids and breakpoints across all devices
-- 🧠 **Code Splitting** — every below-the-fold section is loaded via `React.lazy` + `Suspense` (each compiles to its own chunk)
-- ⏳ **Lazy Loading** — heavy sections (Contact, Projects, etc.) load only when needed
-- 🔍 **SEO** — meta/OG/Twitter tags and JSON-LD structured data for rich search results
+- 📱 **Responsive Design** — fluid layouts across all devices
+- 🌙 **Dark / Light Mode** — instant, flash-free theme switching
+- 🎬 **Framer Motion Animations** — GPU-friendly, scroll-triggered
+- 💎 **Glassmorphism UI** — lightweight CSS backdrop blur
+- 🔍 **SEO** — meta/OG/Twitter tags + JSON-LD structured data
 - ♿ **Accessibility** — keyboard-friendly, ARIA-annotated, reduced-motion aware
-- 🔒 **TypeScript** — type-safe data models and components (`tsc -b` runs as part of the build)
-
----
-
-## 🌐 Deployment
-
-### ▲ Vercel
-
-1. Push this repo to GitHub.
-2. Go to [vercel.com](https://vercel.com) → **New Project** → import the repository.
-3. Vercel auto-detects Vite — no configuration needed.
-4. Click **Deploy**. Your site is live at `https://<project>.vercel.app`.
-
-### 🟠 Netlify
-
-1. Push this repo to GitHub.
-2. Go to [netlify.com](https://www.netlify.com) → **Add new site** → **Import an existing project**.
-3. Build settings:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `dist`
-4. Click **Deploy site**. Your site is live at `https://<site>.netlify.app`.
-
-> After deploying, update `index.html` — replace the `your-portfolio-url.dev/` placeholders (canonical, `og:url`, JSON-LD `url`) with your real domain.
-
----
-
-## 🗺️ Future Improvements
-
-- 📬 **Contact form backend** — connect the form to a serverless endpoint (e.g. Formspree, Resend) for real submissions
-- 🗒️ **Blog / Projects detail pages** — add React Router for full page routes and deep linking
-- 🌍 **Internationalization (i18n)** — English/Tamil language switcher
-- 🧪 **Testing** — unit tests (Vitest + Testing Library) and end-to-end coverage
-- 🔄 **Content automation** — pull projects from GitHub API instead of static data
-- 🚀 **CI/CD** — automated lint, type-check, and build on every PR
-- 📊 **Analytics** — privacy-friendly page view tracking
-
----
-
-## 👤 Author
-
-**Karthik Raja S** — B.Tech Information Technology student, Java & Full Stack Developer, AI & RAG enthusiast.
-
-| | |
-| --- | --- |
-| **GitHub** | [github.com/karthik-raja-sk](https://github.com/karthik-raja-sk) |
-| **LinkedIn** | [linkedin.com/in/karthik-raja-s-209a672a5](https://www.linkedin.com/in/karthik-raja-s-209a672a5/) |
-| **LeetCode** | [leetcode.com/u/PdfLd9zpUA](https://leetcode.com/u/PdfLd9zpUA/) |
-| **Email** | [saminathankarthikraja@gmail.com](mailto:saminathankarthikraja@gmail.com) |
-
----
-
-<p align="center">
-  Built with ❤️ using <a href="https://react.dev/">React</a>, <a href="https://vite.dev/">Vite</a>, <a href="https://www.typescriptlang.org/">TypeScript</a>, and <a href="https://tailwindcss.com/">Tailwind CSS</a>.<br>
-  © 2026 Karthik Raja S · All rights reserved.
-</p>
-
----
-
-## 🌟 Why This Portfolio
-
-This portfolio showcases my skills, projects, achievements, and hands-on experience as a **B.Tech Information Technology student** aspiring to become a **Software Engineer**. It is designed to give recruiters a clear, polished picture of what I build and how I think — from Java full-stack development and AI-powered systems to cloud-based cybersecurity platforms.
-
----
-
-## ✨ Highlights
-
-- 💎 **Modern Glassmorphism UI** — frosted-glass cards, subtle borders, and depth
-- 📱 **Fully Responsive** — pixel-perfect from mobile to desktop
-- 🌙 **Dark/Light Mode** — instant theme switching with no flash of the wrong theme
-- 🎬 **Smooth Framer Motion Animations** — staggered reveals and scroll-triggered effects
-- 🔒 **TypeScript** — type-safe, refactor-friendly codebase
-- 🔍 **SEO Optimized** — meta tags, Open Graph, Twitter Cards, and JSON-LD
-- ♿ **Accessible Design** — keyboard-friendly with ARIA support and reduced-motion support
-- 📄 **Resume Download** — one-click resume PDF download
-- 🧩 **Clean Component Architecture** — small, reusable, composable components
+- 🔒 **TypeScript** — type-safe end to end; `tsc -b` runs before every build
 - ⏳ **Lazy Loading** — below-the-fold sections load on demand
-- ⚡ **Code Splitting** — each section ships as its own optimized chunk
+- ⚡ **Code Splitting** — each section compiles to its own chunk
 
 ---
 
-## 📈 Performance
+## 🎯 Future Improvements
 
-- 🚀 **Lighthouse Optimized** — built to score high on Core Web Vitals
-- 📱 **Responsive Design** — fluid layouts across every viewport
-- ♿ **Accessibility Focused** — screen-reader friendly and reduced-motion aware
-- ⚡ **Fast Loading** — code-split chunks and optimized assets
-- ✅ **Production Ready** — `tsc -b` type-checking runs before every build
-
----
-
-## 🎯 Future Enhancements
-
-- 📊 **GitHub Contribution Graph** — embed live contribution activity
-- 📈 **LeetCode Statistics** — display real-time solved-problem stats
-- 📝 **Blog Section** — share learnings and technical deep-dives
-- 🔎 **Project Search & Filters** — find projects by stack and keyword
-- 🌐 **Multi-language Support** — English/Tamil internationalization
-- 👀 **Visitor Analytics** — privacy-friendly page view tracking
-- 🤖 **More AI Projects** — expand the AI-powered project portfolio
+- 📬 Wire the contact form to a serverless backend for real submissions
+- 📝 Add a blog section for technical deep-dives
+- 🔎 Add project search and filters by stack
+- 🌐 Add English/Tamil internationalization
+- 📊 Add privacy-friendly visitor analytics
 
 ---
 
@@ -315,15 +247,11 @@ This portfolio showcases my skills, projects, achievements, and hands-on experie
 [![GitHub](https://img.shields.io/badge/GitHub-karthik--raja--sk-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/karthik-raja-sk)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Karthik%20Raja%20S-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karthik-raja-s-209a672a5/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-PdfLd9zpUA-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/PdfLd9zpUA/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-my--portfolio--eta--one--42-6A5ACD?style=for-the-badge&logo=vercel&logoColor=white)](https://my-portfolio-eta-one-42.vercel.app)
 [![Email](https://img.shields.io/badge/Email-saminathankarthikraja%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:saminathankarthikraja@gmail.com)
 
 ---
 
-## ⭐ Support
-
-If you find this project helpful or inspiring, please consider giving it a **⭐ on GitHub** — it means a lot and helps others discover it!
-
 <p align="center">
-  <strong>Designed &amp; Developed with ❤️ by Karthik Raja S</strong>
+  <strong>Designed &amp; Developed by Karthik Raja S</strong>
 </p>
-

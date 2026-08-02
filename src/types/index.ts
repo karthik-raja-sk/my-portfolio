@@ -15,7 +15,6 @@ export interface Skill {
   level: number
   icon: LucideIcon
   color: string
-  highlight?: string
 }
 
 export interface SkillGroup {
@@ -30,14 +29,11 @@ export interface Project {
   id: string
   title: string
   description: string
-  longDescription: string
   technologies: string[]
   github: string
   live?: string
-  image?: string
   gradient: string
   icon: LucideIcon
-  featured?: boolean
 }
 
 export interface Achievement {
@@ -67,9 +63,4 @@ export interface Certification {
   year: string
   credentialUrl?: string
   skills: string[]
-}
-
-export interface NavItem {
-  label: string
-  href: string
 }

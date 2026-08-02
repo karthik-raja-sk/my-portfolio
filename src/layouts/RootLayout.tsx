@@ -1,13 +1,39 @@
+import { Suspense, lazy } from 'react'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
 import { Hero } from '@/sections/Hero'
-import { About } from '@/sections/About'
-import { Skills } from '@/sections/Skills'
-import { Projects } from '@/sections/Projects'
-import { Achievements } from '@/sections/Achievements'
-import { Education } from '@/sections/Education'
-import { Certifications } from '@/sections/Certifications'
-import { Contact } from '@/sections/Contact'
+
+const About = lazy(() =>
+  import('@/sections/About').then((module) => ({ default: module.About })),
+)
+const Skills = lazy(() =>
+  import('@/sections/Skills').then((module) => ({ default: module.Skills })),
+)
+const Projects = lazy(() =>
+  import('@/sections/Projects').then((module) => ({ default: module.Projects })),
+)
+const Achievements = lazy(() =>
+  import('@/sections/Achievements').then((module) => ({
+    default: module.Achievements,
+  })),
+)
+const Education = lazy(() =>
+  import('@/sections/Education').then((module) => ({
+    default: module.Education,
+  })),
+)
+const Certifications = lazy(() =>
+  import('@/sections/Certifications').then((module) => ({
+    default: module.Certifications,
+  })),
+)
+const Contact = lazy(() =>
+  import('@/sections/Contact').then((module) => ({ default: module.Contact })),
+)
+
+function SectionFallback() {
+  return <div className="py-24 sm:py-28" aria-hidden="true" />
+}
 
 export function RootLayout() {
   return (
@@ -21,13 +47,15 @@ export function RootLayout() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Achievements />
-        <Education />
-        <Certifications />
-        <Contact />
+        <Suspense fallback={<SectionFallback />}>
+          <About />
+          <Skills />
+          <Projects />
+          <Achievements />
+          <Education />
+          <Certifications />
+          <Contact />
+        </Suspense>
       </main>
       <Footer />
     </div>

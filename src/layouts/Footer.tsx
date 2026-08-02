@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container-shell">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <Brand name={profile.name} />
+            <Brand name={profile.name} subtitle={profile.title} />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-500 dark:text-slate-400">
               {profile.tagline}
             </p>
@@ -48,7 +48,7 @@ export function Footer() {
                       href={social.url}
                       target={social.url.startsWith('http') ? '_blank' : undefined}
                       rel={social.url.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className="inline-flex items-center gap-2.5 text-sm font-medium text-slate-600 transition-colors hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400"
+                      className="inline-flex items-center gap-2.5 text-sm font-medium text-slate-600 transition-all duration-300 hover:-translate-x-0.5 hover:text-brand-600 dark:text-slate-300 dark:hover:text-brand-400"
                     >
                       <Icon className="size-4" aria-hidden="true" />
                       {social.name}

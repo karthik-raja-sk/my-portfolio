@@ -23,7 +23,6 @@
 
   --animate-blob: blob 10s ease-in-out infinite;
   --animate-float: float 6s ease-in-out infinite;
-  --animate-gradient-x: gradient-x 8s ease infinite;
   --animate-cursor-blink: cursor-blink 1s step-end infinite;
 
   @keyframes blob {
@@ -46,16 +45,6 @@
     }
     50% {
       transform: translateY(-14px);
-    }
-  }
-
-  @keyframes gradient-x {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
     }
   }
 
@@ -90,6 +79,11 @@
     color-scheme: dark;
   }
 
+  :where(a, button, input, textarea, select, summary, [tabindex]:not([tabindex='-1'])):focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+  }
+
   ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -106,6 +100,22 @@
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-brand-400;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 

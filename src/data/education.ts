@@ -1,51 +1,57 @@
 import type { EducationItem, Certification } from '@/types'
 
-// TODO: Replace the placeholder institution, period, and score with your actual details.
 export const education: EducationItem[] = [
   {
     id: 'btech',
     degree: 'B.Tech in Information Technology',
-    institution: 'Your University',
-    location: 'India',
-    period: '2022 – 2026',
-    score: 'CGPA: --',
+    institution: 'VSB Engineering College',
+    location: 'Tamil Nadu',
+    period: '2023 – 2027',
+    score: 'CGPA: 8.145',
     description:
-      'Focused on Software Engineering, Java, Full Stack Development, Artificial Intelligence, and problem solving. Active in hackathons and technical communities.',
+      'Coursework: OOP with Java, Data Structures, DBMS, and Computer Networks. Focused on Java full-stack development, AI-powered systems, and cloud-based cybersecurity.',
+  },
+  {
+    id: 'hsc',
+    degree: 'Class XII (HSC)',
+    institution: 'Ponnu Matriculation Higher Secondary School',
+    location: 'Tamil Nadu',
+    period: '2022 – 2023',
+    score: 'Score: 86%',
+    description: 'Completed Higher Secondary education in the Science stream.',
+  },
+  {
+    id: 'sslc',
+    degree: 'Class X (SSLC)',
+    institution: 'Ponnu Matriculation Higher Secondary School',
+    location: 'Tamil Nadu',
+    period: '2020 – 2021',
+    score: 'Score: 86%',
+    description: 'Completed Secondary School Leaving Certificate (SSLC).',
   },
 ]
 
-// TODO: Replace with your real certifications, issuers, and credential links.
+// TODO: Add credential URLs if you have them; years are best-effort estimates.
 export const certifications: Certification[] = [
   {
-    id: 'java-spring',
-    title: 'Java & Spring Boot Development',
-    issuer: 'Add issuer here',
+    id: 'nptel-java',
+    title: 'Introduction to Java — NPTEL Silver Medal',
+    issuer: 'NPTEL (IIT/NIT)',
     year: '2025',
-    credentialUrl: 'https://www.example.com',
-    skills: ['Java', 'Spring Boot', 'REST APIs'],
+    skills: ['Java', 'OOP'],
   },
   {
-    id: 'rag-langchain',
-    title: 'RAG with LangChain',
-    issuer: 'Add issuer here',
+    id: 'infosys-java-dbms',
+    title: 'Java Programming & DBMS',
+    issuer: 'Infosys Certified',
     year: '2025',
-    credentialUrl: 'https://www.example.com',
-    skills: ['LangChain', 'RAG', 'LLMs'],
+    skills: ['Java', 'DBMS'],
   },
   {
-    id: 'fullstack-web',
-    title: 'Full Stack Web Development',
-    issuer: 'Add issuer here',
-    year: '2024',
-    credentialUrl: 'https://www.example.com',
-    skills: ['React', 'Tailwind CSS', 'FastAPI'],
-  },
-  {
-    id: 'docker',
-    title: 'Docker & Containerization',
-    issuer: 'Add issuer here',
-    year: '2024',
-    credentialUrl: 'https://www.example.com',
-    skills: ['Docker', 'DevOps Basics'],
+    id: 'nasscom-genai',
+    title: 'Generative AI Fluency',
+    issuer: 'NASSCOM FutureSkills',
+    year: '2025',
+    skills: ['Generative AI', 'AI/ML'],
   },
 ]

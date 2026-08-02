@@ -1,4 +1,3 @@
-// TODO: Review the year/details values below and update them to match your records.
 import { Trophy, Award, Medal } from 'lucide-react'
 import type { Achievement } from '@/types'
 
@@ -9,7 +8,7 @@ export const achievements: Achievement[] = [
     organization: 'Infosys Tech@BangaloreDC',
     year: '2025',
     description:
-      'Secured the runner-up position in the technical competition hosted by Infosys at BangaloreDC.',
+      'Runner-up among teams from multiple institutions in a technical competition hosted at Infosys’s Bangalore Development Center, demonstrating strong problem-solving under time pressure.',
     icon: Trophy,
     color: 'from-amber-400 to-orange-500',
   },
@@ -19,7 +18,7 @@ export const achievements: Achievement[] = [
     organization: 'Infosys Springboard',
     year: '2025',
     description:
-      'Completed a virtual internship covering real-world software engineering workflows and industry best practices.',
+      'Completed a virtual internship with Infosys Springboard 6.0, building an AI-driven music composition system that analyzes user input patterns and generates original compositions using machine learning techniques.',
     icon: Award,
     color: 'from-indigo-400 to-violet-500',
   },
@@ -29,7 +28,7 @@ export const achievements: Achievement[] = [
     organization: 'LeetCode',
     year: 'Ongoing',
     description:
-      'Consistently sharpening data structures & algorithms skills with a strong focus on problem solving.',
+      'Solved 100+ algorithm and data structure problems on LeetCode in Java, consistently sharpening problem-solving skills and algorithmic thinking.',
     icon: Medal,
     color: 'from-emerald-400 to-teal-500',
   },

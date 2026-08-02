@@ -22,6 +22,15 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    if (!isOpen) return
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsOpen(false)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [isOpen])
+
   const closeMenu = () => setIsOpen(false)
 
   return (
@@ -82,6 +91,7 @@ export function Navbar() {
               type="button"
               onClick={() => setIsOpen((open) => !open)}
               aria-expanded={isOpen}
+              aria-controls="mobile-menu"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
               className="inline-flex size-10 items-center justify-center rounded-full border border-slate-200 bg-white/70 text-slate-600 backdrop-blur transition-colors hover:text-brand-600 lg:hidden dark:border-white/10 dark:bg-white/5 dark:text-slate-300"
             >
@@ -97,6 +107,7 @@ export function Navbar() {
         <AnimatePresence>
           {isOpen && (
             <motion.div
+              id="mobile-menu"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}

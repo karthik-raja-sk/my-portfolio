@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { FormEvent } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { AlertCircle, Briefcase, CheckCircle2, Loader2, Mail, MapPin, Send } from 'lucide-react'
+import { AlertCircle, Briefcase, CheckCircle2, Loader2, Mail, MapPin, Phone, Send } from 'lucide-react'
 import { profile } from '@/data/profile'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Button } from '@/components/ui/Button'
@@ -59,6 +59,7 @@ function validate(form: ContactForm): FormErrors {
 
 const contactInfo = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
+  { icon: Phone, label: 'Phone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
   { icon: MapPin, label: 'Location', value: profile.location, href: undefined },
   { icon: Briefcase, label: 'Availability', value: profile.availability, href: undefined },
 ]
@@ -70,10 +71,20 @@ interface FieldProps {
   error?: string
   onChange: (value: string) => void
   type?: string
+  autoComplete?: string
   textarea?: boolean
 }
 
-function Field({ id, label, value, error, onChange, type = 'text', textarea = false }: FieldProps) {
+function Field({
+  id,
+  label,
+  value,
+  error,
+  onChange,
+  type = 'text',
+  autoComplete,
+  textarea = false,
+}: FieldProps) {
   const baseClasses =
     'w-full rounded-2xl border bg-white/70 px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 shadow-sm outline-none backdrop-blur transition-all duration-300 dark:bg-slate-950/40 dark:text-slate-100 dark:placeholder:text-slate-500'
   const validClasses =
@@ -104,6 +115,7 @@ function Field({ id, label, value, error, onChange, type = 'text', textarea = fa
         <input
           id={id}
           type={type}
+          autoComplete={autoComplete}
           value={value}
           onChange={(event) => onChange(event.target.value)}
           aria-invalid={Boolean(error)}
@@ -134,6 +146,12 @@ export function Contact() {
   const [form, setForm] = useState<ContactForm>(initialForm)
   const [errors, setErrors] = useState<FormErrors>({})
   const [status, setStatus] = useState<FormStatus>('idle')
+  const timersRef = useRef<number[]>([])
+
+  useEffect(() => {
+    const timers = timersRef.current
+    return () => timers.forEach((timer) => window.clearTimeout(timer))
+  }, [])
 
   const updateField = (field: keyof ContactForm) => (value: string) => {
     setForm((current) => ({ ...current, [field]: value }))
@@ -148,11 +166,13 @@ export function Contact() {
     if (Object.keys(nextErrors).length > 0) return
 
     setStatus('sending')
-    window.setTimeout(() => {
-      setStatus('success')
-      setForm(initialForm)
-      window.setTimeout(() => setStatus('idle'), 5000)
-    }, 1400)
+    timersRef.current.push(
+      window.setTimeout(() => {
+        setStatus('success')
+        setForm(initialForm)
+        timersRef.current.push(window.setTimeout(() => setStatus('idle'), 5000))
+      }, 1400),
+    )
   }
 
   return (
@@ -223,6 +243,7 @@ export function Contact() {
                   error={errors.name}
                   onChange={updateField('name')}
                   type="text"
+                  autoComplete="name"
                 />
                 <Field
                   id="email"
@@ -231,6 +252,7 @@ export function Contact() {
                   error={errors.email}
                   onChange={updateField('email')}
                   type="email"
+                  autoComplete="email"
                 />
               </div>
               <div className="mt-5">

@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 
 /**
  * Tracks which section is currently in view (as '#section-id').
+ *
+ * Re-observes when sections mount lazily via a MutationObserver so the hook
+ * also works with `React.lazy` sections that render after initial paint.
  */
 export function useActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState<string>(
@@ -9,6 +12,8 @@ export function useActiveSection(sectionIds: string[]) {
   )
 
   useEffect(() => {
+    const observed = new Set<Element>()
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -20,12 +25,25 @@ export function useActiveSection(sectionIds: string[]) {
       { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
     )
 
-    for (const id of sectionIds) {
-      const element = document.getElementById(id)
-      if (element) observer.observe(element)
+    const observeAll = () => {
+      for (const id of sectionIds) {
+        const element = document.getElementById(id)
+        if (element && !observed.has(element)) {
+          observed.add(element)
+          observer.observe(element)
+        }
+      }
     }
 
-    return () => observer.disconnect()
+    observeAll()
+
+    const mutationObserver = new MutationObserver(observeAll)
+    mutationObserver.observe(document.body, { childList: true, subtree: true })
+
+    return () => {
+      observer.disconnect()
+      mutationObserver.disconnect()
+    }
   }, [sectionIds])
 
   return activeSection

@@ -4,23 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Apply the saved theme before first paint to avoid a flash of the wrong mode -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('portfolio-theme')
+          var dark =
+            stored === 'dark' ||
+            (!stored &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (e) {
+          /* no-op */
+        }
+      })()
+    </script>
+
     <!-- Primary Meta Tags -->
-    <title>Karthik Raja | Java & Full Stack Developer | B.Tech IT</title>
+    <title>Karthik Raja S | Java Developer & Full Stack Developer | AI &amp; RAG Enthusiast</title>
     <meta
       name="title"
-      content="Karthik Raja | Java & Full Stack Developer | B.Tech IT"
+      content="Karthik Raja S | Java Developer & Full Stack Developer | AI & RAG Enthusiast"
     />
     <meta
       name="description"
-      content="Portfolio of Karthik Raja, a B.Tech Information Technology student and Java & Full Stack developer specializing in Spring Boot, FastAPI, and AI-powered RAG applications."
+      content="Portfolio of Karthik Raja S, a B.Tech Information Technology student with hands-on experience in Java full-stack development, AI-powered systems, and cloud-based cybersecurity. Open to Java Developer, Backend Engineer, and Full Stack Developer roles."
     />
     <meta
       name="keywords"
-      content="Karthik Raja, portfolio, B.Tech IT, Information Technology, Java, Spring Boot, FastAPI, Full Stack Developer, RAG, LangChain, AI, Software Developer"
+      content="Karthik Raja S, portfolio, B.Tech IT, Information Technology, Java, Spring Boot, FastAPI, Full Stack Developer, RAG, LangChain, AI, Cybersecurity, Software Developer, VSB Engineering College"
     />
-    <meta name="author" content="Karthik Raja" />
+    <meta name="author" content="Karthik Raja S" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#6366f1" />
+    <meta
+      name="theme-color"
+      content="#f8fafc"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#020617"
+      media="(prefers-color-scheme: dark)"
+    />
 
     <!-- TODO: Replace with your deployed domain when live. -->
     <link rel="canonical" href="https://your-portfolio-url.dev/" />
@@ -29,25 +54,29 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Karthik Raja | Java & Full Stack Developer | B.Tech IT"
+      content="Karthik Raja S | Java Developer & Full Stack Developer | AI & RAG Enthusiast"
     />
     <meta
       property="og:description"
-      content="Java & full-stack developer and B.Tech Information Technology student building robust backends and AI-powered RAG applications."
+      content="B.Tech Information Technology student with hands-on experience in Java full-stack development, AI-powered systems, and cloud-based cybersecurity. Open to Java Developer and Full Stack Developer roles."
     />
     <meta property="og:url" content="https://your-portfolio-url.dev/" />
     <meta property="og:image" content="/src/assets/avatar.svg" />
     <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="Karthik Raja S | Portfolio" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Karthik Raja S avatar monogram" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Karthik Raja | Java & Full Stack Developer | B.Tech IT"
+      content="Karthik Raja S | Java Developer & Full Stack Developer | AI & RAG Enthusiast"
     />
     <meta
       name="twitter:description"
-      content="Java & full-stack developer and B.Tech Information Technology student building robust backends and AI-powered RAG applications."
+      content="B.Tech Information Technology student with hands-on experience in Java full-stack development, AI-powered systems, and cloud-based cybersecurity."
     />
     <meta name="twitter:image" content="/src/assets/avatar.svg" />
 
@@ -66,13 +95,14 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Karthik Raja",
-        "jobTitle": "Java & Full Stack Developer",
-        "description": "B.Tech Information Technology student and Java & Full Stack developer specializing in RAG applications.",
+        "name": "Karthik Raja S",
+        "jobTitle": "Java Developer | Full Stack Developer | AI & RAG Enthusiast",
+        "description": "B.Tech Information Technology student with hands-on experience in Java full-stack development, AI-powered systems, and cloud-based cybersecurity platforms.",
         "url": "https://your-portfolio-url.dev/",
         "sameAs": [
-          "https://github.com/karthik-raja",
-          "https://www.linkedin.com/in/karthik-raja"
+          "https://github.com/karthik-raja-sk",
+          "https://www.linkedin.com/in/karthik-raja-s-209a672a5/",
+          "https://leetcode.com/u/PdfLd9zpUA/"
         ]
       }
     </script>

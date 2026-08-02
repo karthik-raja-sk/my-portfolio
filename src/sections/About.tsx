@@ -46,7 +46,10 @@ export function About() {
                 {quickFacts.map((fact) => {
                   const Icon = fact.icon
                   return (
-                    <li key={fact.label} className="flex items-start gap-4">
+                    <li
+                      key={fact.label}
+                      className="flex items-start gap-4 rounded-2xl p-2 transition-transform duration-300 hover:-translate-y-0.5 hover:bg-brand-500/5"
+                    >
                       <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:bg-brand-400/10 dark:text-brand-400">
                         <Icon className="size-5" aria-hidden="true" />
                       </span>

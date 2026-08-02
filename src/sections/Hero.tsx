@@ -96,7 +96,7 @@ export function Hero() {
             variants={fadeUp}
             className="mt-10 flex flex-col items-center gap-3 lg:items-start"
           >
-            <p className="text-xs font-medium uppercase tracking-widest text-slate-400 dark:text-slate-500">
+            <p className="text-xs font-medium uppercase tracking-widest text-slate-400 dark:text-slate-400">
               Find me on
             </p>
             <SocialLinks />
@@ -121,7 +121,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="glass-strong absolute -right-6 top-8 flex animate-float items-center gap-2.5 rounded-2xl px-4 py-3 shadow-xl">
+            <div className="glass-strong absolute -right-3 top-8 flex animate-float items-center gap-2.5 rounded-2xl px-4 py-3 shadow-xl sm:-right-6">
               <span className="flex size-9 items-center justify-center rounded-xl bg-brand-500/15 text-brand-500 dark:text-brand-400">
                 <Code2 className="size-5" aria-hidden="true" />
               </span>
@@ -135,7 +135,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="glass-strong absolute -left-8 bottom-24 flex animate-float items-center gap-2.5 rounded-2xl px-4 py-3 shadow-xl [animation-delay:-2s]">
+            <div className="glass-strong absolute -left-3 bottom-24 flex animate-float items-center gap-2.5 rounded-2xl px-4 py-3 shadow-xl [animation-delay:-2s] sm:-left-8">
               <span className="flex size-9 items-center justify-center rounded-xl bg-fuchsia-500/15 text-fuchsia-500 dark:text-fuchsia-400">
                 <BrainCircuit className="size-5" aria-hidden="true" />
               </span>

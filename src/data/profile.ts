@@ -3,9 +3,9 @@ import { GithubIcon, LinkedinIcon, LeetCodeIcon } from '@/components/icons/Brand
 import type { SocialLink } from '@/types'
 
 export const profile = {
-  name: 'Karthik Raja',
+  name: 'Karthik Raja S',
   firstName: 'Karthik',
-  role: 'B.Tech Information Technology Student',
+  title: 'B.Tech Information Technology Student',
   typewriterRoles: [
     'Java Developer',
     'Full Stack Developer',
@@ -14,29 +14,25 @@ export const profile = {
   ],
   tagline: 'Java Developer | Full Stack Developer | AI & RAG Enthusiast',
   summary:
-    'Passionate IT student interested in Software Development, Java, Full Stack Development, Artificial Intelligence, Retrieval-Augmented Generation (RAG), and problem solving.',
+    'Motivated Information Technology undergraduate (CGPA: 8.145) with hands-on experience in Java full-stack development, AI-powered systems, and cloud-based cybersecurity platforms. Proficient in building scalable backend services, RESTful APIs, and database-integrated web solutions. Certified in Java, DBMS, and Generative AI.',
   careerObjective:
-    'Looking for Software Development Engineer opportunities where I can build robust, scalable software and grow into a well-rounded engineer.',
-  location: 'India',
-  email: 'karthik.raja@example.com',
-  resumeUrl: '/resume/Karthik_Raja_Resume.pdf',
-  githubUrl: 'https://github.com/karthik-raja',
+    'Seeking a fresher role as a Java Developer, Backend Engineer, or Full Stack Developer, where I can build robust, scalable software and grow into a well-rounded engineer.',
+  location: 'Tiruppur, Tamil Nadu',
+  phone: '+91 93457 21872',
+  email: 'saminathankarthikraja@gmail.com',
+  resumeUrl: '/resume/Karthik_Raja_S_Resume_v3-1.pdf',
+  githubUrl: 'https://github.com/karthik-raja-sk',
   availability: 'Open to SDE roles & internships',
   yearsOfLearning: 3,
   projectsBuilt: 5,
   leetCodeSolved: 100,
 }
 
-// TODO: Replace the placeholder URLs below with your real social links.
 export const socials: SocialLink[] = [
-  // TODO: Update this GitHub URL.
-  { name: 'GitHub', url: 'https://github.com/karthik-raja', icon: GithubIcon, label: 'Visit my GitHub profile' },
-  // TODO: Update this LinkedIn URL.
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/karthik-raja', icon: LinkedinIcon, label: 'Connect on LinkedIn' },
-  // TODO: Update this LeetCode URL.
-  { name: 'LeetCode', url: 'https://leetcode.com/u/karthik-raja', icon: LeetCodeIcon, label: 'View my LeetCode profile' },
-  // TODO: Update this email address.
-  { name: 'Email', url: 'mailto:karthik.raja@example.com', icon: Mail, label: 'Send me an email' },
+  { name: 'GitHub', url: 'https://github.com/karthik-raja-sk', icon: GithubIcon, label: 'Visit my GitHub profile' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/karthik-raja-s-209a672a5/', icon: LinkedinIcon, label: 'Connect on LinkedIn' },
+  { name: 'LeetCode', url: 'https://leetcode.com/u/PdfLd9zpUA/', icon: LeetCodeIcon, label: 'View my LeetCode profile' },
+  { name: 'Email', url: 'mailto:saminathankarthikraja@gmail.com', icon: Mail, label: 'Send me an email' },
 ]
 
 export const navItems: { label: string; href: string }[] = [

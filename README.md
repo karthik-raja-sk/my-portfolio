@@ -17,9 +17,9 @@ A modern, high-performance single-page portfolio built with **React 19**, **Vite
 
 ## 🖼️ Preview
 
-![KR monogram avatar](./src/assets/avatar.svg)
+![KR monogram avatar](C:\Users\samin\OneDrive\Desktop\My_portfolio\src\assets\Screenshot 2026-08-02 200233.png)
 
-> ⚠️ **Tip:** Replace the image above with a full-width screenshot of the running app (e.g. `docs/preview.png`) for a polished README.
+
 
 A personal portfolio for **Karthik Raja S** — a B.Tech Information Technology student from Tamil Nadu, India, passionate about Java full-stack development, AI-powered systems, and cloud-based cybersecurity. This site presents his profile, skills, projects, achievements, education, and certifications in a clean, animated, recruiter-friendly layout.
 
